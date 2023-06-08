@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 const Navbar = () => {
   return (
-    <div className='bg-white flex justify-between items-center pl-3 border-black border-b-2'>
+    <div className='sticky top-0 bg-white flex justify-between items-center pl-3 border-black border-b-2'>
       <Link href='/'>
         <Logo />
       </Link>

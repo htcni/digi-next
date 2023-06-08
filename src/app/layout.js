@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className='bg-white'>
         <Navbar />
-        {children}
+        <div className='h-[calc(100vh-74px)]'>{children}</div>
       </body>
     </html>
   );

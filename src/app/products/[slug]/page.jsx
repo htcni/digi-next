@@ -2,6 +2,8 @@ import { supabase } from '@/lib/supabase';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   let { data: products, error } = await supabase.from('product').select('slug');
 
