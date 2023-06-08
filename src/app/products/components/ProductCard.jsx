@@ -17,7 +17,11 @@ const ProductCard = ({ product }) => {
       </div>
       <div className='flex center items-center p-4 justify-between'>
         <div>
-          <Link href={`/product/${product.slug}`}>See More → </Link>
+          <Link href={`/products/${product.slug}`}>
+            <div>
+              See More <span className='ml-1'>→</span>
+            </div>
+          </Link>
         </div>
 
         <span className='py-2 px-3 uppercase text-sm bg-black text-white rounded-full'>

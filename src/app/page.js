@@ -18,7 +18,7 @@ export default function Home() {
                   DigiNext opens up a world of possibilities where anyone can
                   kickstart their online earnings journey.
                 </p>
-                <Link href='/products' className=''>
+                <Link href='/products'>
                   <div className='bg-black text-cente py-4 px-8 text-center text-white text-xl lg:text-2xl lg:inline-block rounded hover:translate-x-2 hover:-translate-y-1 transition-transform'>
                     Explore Products
                   </div>
