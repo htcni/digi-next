@@ -9,8 +9,12 @@
   border: 0 solid #e5e7eb;
 }
 
+html,
 body {
-  background-color: black;
+  height: 100%;
+}
+
+body {
   font-family: Mabry pro, sans-serif;
   height: 100%;
 }
