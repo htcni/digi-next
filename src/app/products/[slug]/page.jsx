@@ -46,8 +46,8 @@ const ProductPage = async ({ params: { slug } }) => {
                 <p> Subscribe to get access. </p>
                 <Link
                   href='/pricing'
-                  className='inline-flex justify-center border border-black px-6 py-3 rounded hover:bg-fuchsia-400 hover:text-white transition-colors'>
-                  Add to cart
+                  className='inline-flex justify-center border-2 border-black px-6 py-3 rounded hover:bg-fuchsia-400 transition-colors'>
+                  Get Access
                 </Link>
               </div>
             </section>

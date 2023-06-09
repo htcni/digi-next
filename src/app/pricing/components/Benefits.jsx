@@ -1,6 +1,6 @@
 const benefits = [
   {
-    title: 'One low price',
+    title: 'Low price',
     subtitle: 'Save big. Get everything with a super low monthly subscription',
   },
   {
