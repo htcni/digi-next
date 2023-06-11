@@ -8,7 +8,7 @@ export const metadata = {
   description: 'Sell digital products',
 };
 
-const navbarPages = ['/success'];
+const navbarPages = ['/success', '/login'];
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className='bg-white'>
         {!hideNavbar && <Navbar />}
-        <div className='h-[calc(100vh-74px)]'>{children}</div>
+        <div className={!hideNavbar ? 'h-[calc(100vh-74px)]' : 'h-full'}>
+          {children}
+        </div>
       </body>
     </html>
   );
