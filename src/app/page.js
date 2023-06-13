@@ -40,7 +40,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='p-8 bg-black'></div>
+      <div className='p-1 bg-black text-center text-white'>
+        Image by{' '}
+        <a href='https://www.freepik.com/free-vector/hand-drawn-retro-branding-labels-collection_35106263.htm#page=4&query=retro%20illustration%20pack&position=1&from_view=search&track=ais'>
+          Freepik
+        </a>
+      </div>
     </main>
   );
 }
