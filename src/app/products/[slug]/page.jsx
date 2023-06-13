@@ -17,7 +17,15 @@ async function getProducts(slug) {
 const ProductPage = async ({ params: { slug } }) => {
   const { data: product, error } = await getProducts(slug);
 
-  return <Product product={product} />;
+  return (
+    <>
+      {product ? (
+        <Product product={product} />
+      ) : (
+        <div className='text-center'>Product not found</div>
+      )}
+    </>
+  );
 };
 
 export default ProductPage;

@@ -39,10 +39,10 @@ const Product = ({ product }) => {
               />
             ) : (
               <Image
-                src={`/assets/${product.slug}.png`}
+                src={`/assets/${product?.slug}.png`}
                 width={1200}
                 height={400}
-                alt={product.name}
+                alt={product?.name}
               />
             )}
           </div>
@@ -50,17 +50,17 @@ const Product = ({ product }) => {
           <div className='grid lg:grid-cols-[2fr_1fr] border-t-2 border-black'>
             <section className='border-r-2 border-black'>
               <header className='p-4 border-b-2 border-black'>
-                <h1 className='text-5xl'>{product.name}</h1>
+                <h1 className='text-5xl'>{product?.name}</h1>
               </header>
               <div className='p-4'>
-                <p>{product.description}</p>
+                <p>{product?.description}</p>
               </div>
             </section>
             <section>
               <div className='p-6 flex flex-col gap-2'>
                 {productContent?.download_url && (
                   <a
-                    href={`/assets/${productContent.download_url}`}
+                    href={`/assets/${productContent?.download_url}`}
                     download
                     className='inline-flex justify-center border-2 border-black px-6 py-3 rounded hover:bg-fuchsia-400 transition-colors'>
                     <span>Download</span>

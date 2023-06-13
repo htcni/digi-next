@@ -7,7 +7,6 @@ const useSession = () => {
   const [session, setSession] = useState(null);
 
   useEffect(() => {
-    console.log('SET session CALLED');
     const getSession = async () => {
       const { data, error } = await supabaseClient.auth.getSession();
       if (!error) setSession(data.session);
