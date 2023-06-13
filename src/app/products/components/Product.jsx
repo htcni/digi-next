@@ -8,7 +8,7 @@ import useSession from '@/app/core/hooks/useSession';
 
 const Product = ({ product }) => {
   const supabaseClient = createClientComponentClient();
-  const session = useSession();
+  const [session] = useSession();
 
   const [productContent, setProductContent] = useState(null);
 
@@ -77,8 +77,10 @@ const Product = ({ product }) => {
                     </Link>
                   </div>
                 ) : (
-                  <div>
-                    <p> Subscribe to get access. </p>
+                  <div className='text-center space-y-4'>
+                    <p className='text-2xl font-bold'>
+                      Subscribe to get access.
+                    </p>
                     <Link
                       href='/pricing'
                       className='inline-flex justify-center border-2 border-black px-6 py-3 rounded hover:bg-fuchsia-400 transition-colors'>
