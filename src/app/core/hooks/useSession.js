@@ -14,7 +14,7 @@ const useSession = () => {
     getSession();
   }, []);
 
-  return [session];
+  return session;
 };
 
 export default useSession;

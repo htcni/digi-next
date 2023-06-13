@@ -4,7 +4,7 @@ import Logo from './Logo';
 
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import useSession from '../hooks/useSession';
-import { useUser } from '@supabase/auth-helpers-react';
+
 import { SITE_URL } from '../utils';
 
 const Navbar = () => {
@@ -12,6 +12,7 @@ const Navbar = () => {
   const session = useSession();
 
   const signOut = () => {
+    console.log('signOut');
     supabaseClient.auth.signOut();
   };
 
@@ -43,7 +44,6 @@ const Navbar = () => {
           </a>
           <button
             onClick={signOut}
-            href='/login'
             className='bg-black px-[3vw] py-6 border-black border-l-2 text-white hover:bg-fuchsia-400 hover:text-black transition-colors'>
             <div>Logout</div>
           </button>
