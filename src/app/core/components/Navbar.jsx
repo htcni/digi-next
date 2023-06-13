@@ -9,11 +9,11 @@ import { SITE_URL } from '../utils';
 
 const Navbar = () => {
   const supabaseClient = createClientComponentClient();
-  const session = useSession();
+  const [session, setSession] = useSession();
 
   const signOut = () => {
-    console.log('signOut');
     supabaseClient.auth.signOut();
+    setSession(null);
   };
 
   const onManageBilling = async () => {
