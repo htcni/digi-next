@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import hero from '../../public/assets/store.png';
+export const metadata = {
+  title: 'DigiNext - Sell digital products',
+  description: 'Sell digital products',
+};
 
 export default function Home() {
   return (

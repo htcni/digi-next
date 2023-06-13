@@ -3,11 +3,6 @@ import Navbar from './core/components/Navbar';
 import './styles/globals.css';
 import { useRouter, usePathname } from 'next/navigation';
 
-export const metadata = {
-  title: 'DigiNext - Sell digital products',
-  description: 'Sell digital products',
-};
-
 const navbarPages = ['/success', '/login'];
 
 export default function RootLayout({ children }) {
